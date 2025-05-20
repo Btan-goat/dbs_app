@@ -17,8 +17,8 @@ if (isset($_POST['register'])) {
       <script>
         Swal.fire({
           icon: 'success',
-          title: 'Registration Successful',
-          text: 'Your account has been created successfully!',
+          title: 'Login Successful',
+          text: 'Welcome',
           confirmButtonText: 'OK'
         }).then((result) => {
           if (result.isConfirmed) {
@@ -73,7 +73,10 @@ if (isset($_POST['register'])) {
         <div class="invalid-feedback">Password must be at least 6 characters long, include an uppercase letter, a number, and a special character.</div>      
       </div>
       <button type="submit" id="registerButton" name="register" class="btn btn-primary w-100">Register</button>
-
+      <div class="my-3 text-end">
+        <span>Already have an account?</span>
+        <a href="login.php" class="btn btn-link p-0 align-baseline">Login Now</a>
+      </div>
     </form>
   </div>
   
